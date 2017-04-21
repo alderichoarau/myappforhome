@@ -12,4 +12,12 @@ export class Angular2FullStackPage {
   getNavbarAbout() {
     return $$('app-root a').get(1).getText();
   }
+
+  getNavbarOpinion(){
+    return $$('app-root a').get(2).getText();
+  }
+
+  getNavbarRoomTour(){
+    return $$('app-root a').get(3).getText();
+  }  
 }

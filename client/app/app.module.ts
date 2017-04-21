@@ -5,6 +5,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { OpinionComponent } from './opinion/opinion.component';
+import { RoomComponent } from './room/room.component';
 import { DataService } from './services/data.service';
 
 
@@ -12,7 +14,9 @@ import { DataService } from './services/data.service';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    OpinionComponent,
+    RoomComponent
   ],
   imports: [
     AppRoutingModule,
