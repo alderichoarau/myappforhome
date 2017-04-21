@@ -30,16 +30,15 @@ A window will automatically open at [localhost:4200](http://localhost:4200). Ang
 - Connect heroku to github project 
 - create new pipeline
 - etc
-3. Edit `.gitignore` and remove line with `/dist`
-4. Edit in `db.ts` the url of MongoDB server to a real server. You can create a MongoDB server with Heroku or mLab.
-5. `npm i`
-6. `ng build -prod` or `ng build -aot -prod`
-7. `tsc -p server`
-8. `git add .`
-9. `git commit -m "Going to Heroku"`
-10. `git push`
-11. With heroku web site clic on "Deploy branch" 
-12. Finally click on "View"
+3. Edit in `db.ts` the url of MongoDB server to a real server. You can create a MongoDB server with Heroku or mLab.
+4. `npm i`
+5. `ng build -prod` or `ng build -aot -prod`
+6. `tsc -p server`
+7. `git add .`
+8. `git commit -m "Going to Heroku"`
+9. `git push`
+10. With heroku web site clic on "Deploy branch" 
+11. Finally click on "View"
 
 ## Running unit tests
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
