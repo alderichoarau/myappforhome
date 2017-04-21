@@ -32,10 +32,14 @@ describe('Component: App', () => {
     expect(de[1].nativeElement.textContent).toContain('About');
     expect(de[2].nativeElement.textContent).toContain('Opinion');
     expect(de[3].nativeElement.textContent).toContain('Room');
+    expect(de[4].nativeElement.textContent).toContain('Contact');
+    expect(de[5].nativeElement.textContent).toContain('Price');
     expect(de[0].attributes['routerLink']).toBe('/');
     expect(de[1].attributes['routerLink']).toBe('/about');
     expect(de[2].attributes['routerLink']).toBe('/opinion');
     expect(de[2].attributes['routerLink']).toBe('/room');
+    expect(de[2].attributes['routerLink']).toBe('/contact');
+    expect(de[2].attributes['routerLink']).toBe('/price');
   });
 
 });

@@ -13,11 +13,19 @@ export class Angular2FullStackPage {
     return $$('app-root a').get(1).getText();
   }
 
-  getNavbarOpinion(){
+  getNavbarOpinion() {
     return $$('app-root a').get(2).getText();
   }
 
-  getNavbarRoomTour(){
+  getNavbarRoomTour() {
     return $$('app-root a').get(3).getText();
-  }  
+  }
+
+  getNavbarPrice() {
+    return $$('app-root a').get(4).getText();
+  }
+
+  getNavbarContact() {
+    return $$('app-root a').get(5).getText();
+  }
 }
