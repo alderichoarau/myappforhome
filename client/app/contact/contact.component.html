@@ -6,3 +6,17 @@
     Insert tel and email
   </div>
 </div>
+
+<div class="card">
+  <h4 class="card-header"><label class="fa fa-map-marker"></label> Where find us ?</h4>
+  <div class="card-block">
+
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+
+    <sebm-google-map [latitude]="lat" [longitude]="lng">
+      <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+    </sebm-google-map>
+
+  </div>
+</div>

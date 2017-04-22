@@ -10,7 +10,10 @@ import { RoomComponent } from './room/room.component';
 import { PriceComponent } from './price/price.component';
 import { ContactComponent } from './contact/contact.component';
 import { DataService } from './services/data.service';
-
+import { AgmCoreModule } from 'angular2-google-maps/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,13 @@ import { DataService } from './services/data.service';
   ],
   imports: [
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA1VGEnxbOIo06RCAkZ8fL9aGOv7bK1Zvg'
+    })
   ],
   providers: [
     DataService

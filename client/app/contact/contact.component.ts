@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { AgmCoreModule } from 'angular2-google-maps/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +11,15 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-  constructor() { }
+  // google maps zoom level
+  zoom: number = 8;
+
+  // initial center position for the map
+  lat: number = 43.57901799999999;
+  lng: number = 1.4446762000000035;
+
+
+
+
 
 }
