@@ -11,7 +11,7 @@
     "start": "node dist/server/app.js",
     "predev": "tsc -p server",
     "dev": "concurrently \"mongod\" \"ng serve -pc proxy.conf.json --open\" \"tsc -w -p server\" \"nodemon\"",
-    "prod": "concurrently \"mongod\" \"ng build -aot -prod && tsc -p server && node dist/server/app.js\"",
+    "prod": "concurrently \"mongod\" \"ng build -prod && tsc -p server && node dist/server/app.js\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -41,6 +41,7 @@
     "jquery": "^3.2.1",
     "mongoose": "^4.9.1",
     "morgan": "^1.8.1",
+    "ng2-translate": "^5.0.0",
     "rxjs": "^5.3.0",
     "rxjs-node-stream-subject": "^0.2.0",
     "tether": "1.4.0",
