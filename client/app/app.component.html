@@ -3,26 +3,42 @@
   <nav class="navbar navbar-dark bg-primary">
     <div class="nav navbar-nav">
       <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-        <i class="fa fa-home"></i> Home
+        <i class="fa fa-home"></i> {{ 'home.menubar.title' | translate }}
       </a>
       <a routerLink="/opinion" class="nav-item nav-link" routerLinkActive="active">
-        <i class="fa fa-list-ul"></i> Opinion
+        <i class="fa fa-list-ul"></i> {{ 'opinion.menubar.title' | translate }}
       </a>
       <a routerLink="/room" class="nav-item nav-link" routerLinkActive="active">
-        <i class="fa fa-youtube-play"></i> Room Tour
+        <i class="fa fa-youtube-play"></i> {{ 'roomtour.menubar.title' | translate }}
       </a>
       <a routerLink="/price" class="nav-item nav-link" routerLinkActive="active">
-        <i class="fa fa-credit-card"></i> Price
+        <i class="fa fa-credit-card"></i> {{ 'price.menubar.title' | translate }}
       </a>
       <a routerLink="/contact" class="nav-item nav-link" routerLinkActive="active">
-        <i class="fa fa-address-card"></i> Contact
+        <i class="fa fa-address-card"></i> {{ 'contact.menubar.title' | translate }}
       </a>
       <a routerLink="/about" class="nav-item nav-link" routerLinkActive="active">
-        <i class="fa fa-info-circle"></i> About
+        <i class="fa fa-info-circle"></i> {{ 'about.menubar.title' | translate }}
       </a>
     </div>
   </nav>
 
   <router-outlet></router-outlet>
+
+  <div>
+    <!--<label>
+        {{ 'home.select' | translate }}
+        <select #langSelect (change)="translate.use(langSelect.value)">
+          <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+        </select>
+      </label>-->
+  </div>
+  <div>
+    <img style="cursor: pointer;" title="English" class="flag flag-gb" (click)="translate.use('en')"/>
+    <img style="cursor: pointer;" title="Français" class="flag flag-fr" (click)="translate.use('fr')"/>
+    <img style="cursor: pointer;" title="Español" class="flag flag-es" (click)="translate.use('es')"/>
+    <img style="cursor: pointer;" title="Português" class="flag flag-pt" (click)="translate.use('fr')"/>
+    <img style="cursor: pointer;" title="Italiano" class="flag flag-it" (click)="translate.use('fr')"/>
+  </div>
 
 </div>

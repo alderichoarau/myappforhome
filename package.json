@@ -28,6 +28,8 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.24",
+    "@ngx-translate/core": "^6.0.1",
+    "@ngx-translate/http-loader": "0.0.3",
     "angular-calendar": "^0.14.0",
     "angular2-google-maps": "^0.17.0",
     "body-parser": "^1.17.1",
