@@ -562,7 +562,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 // AoT requires an exported function for factories
 function HttpLoaderFactory(http) {
-    return new __WEBPACK_IMPORTED_MODULE_19__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, "client/app/i18n/", ".json");
+    return new __WEBPACK_IMPORTED_MODULE_19__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, 'client/app/i18n/', '.json');
 }
 var AppModule = (function () {
     function AppModule() {
