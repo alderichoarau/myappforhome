@@ -46,6 +46,9 @@
       "project": "client/tsconfig.app.json"
     },
     {
+      "project": "client/app/i18n/en.json"
+    },
+    {
       "project": "client/tsconfig.spec.json"
     },
     {
