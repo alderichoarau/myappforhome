@@ -21,7 +21,7 @@
     "firstbox.title": "A propos",
     "firstbox.author.label": "Author:",
     "firstbox.github.label": "GitHub:",
-    "firstbox.github.repo.label":"Project Repository",
+    "firstbox.github.repo.label": "Project Repository",
     "firstbox.toolused.label": "Tools used:"
   }
 }
