@@ -1,0 +1,27 @@
+{
+  "home": {
+    "menubar.title": "Accueil",
+    "TITLE": "Bonjour Angular avec ngx-translate !",
+    "SELECT": "Changer la langue"
+  },
+  "opinion": {
+    "menubar.title": "Opinion"
+  },
+  "roomtour": {
+    "menubar.title": "La chambre"
+  },
+  "price": {
+    "menubar.title": "Tarifs"
+  },
+  "contact": {
+    "menubar.title": "Contact"
+  },
+  "about": {
+    "menubar.title": "A propos",
+    "firstbox.title": "A propos",
+    "firstbox.author.label": "Auteur :",
+    "firstbox.github.label": "GitHub :",
+    "firstbox.github.repo.label": "Répertoire projet",
+    "firstbox.toolused.label": "Les outils utilisés :"
+  }
+}
