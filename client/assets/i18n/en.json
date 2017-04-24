@@ -14,11 +14,13 @@
     "menubar.title": "Prices"
   },
   "contact": {
-    "menubar.title": "Contact"
+    "menubar.title": "Contact",
+    "firstbox.title": "Contact",
+    "secondbox.title": "Where find us ?"
   },
   "about": {
-    "menubar.title": "A propos",
-    "firstbox.title": "A propos",
+    "menubar.title": "About",
+    "firstbox.title": "About",
     "firstbox.author.label": "Author:",
     "firstbox.github.label": "GitHub:",
     "firstbox.github.repo.label": "Project Repository",

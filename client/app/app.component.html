@@ -1,5 +1,8 @@
 <div class="container">
 
+
+  <!--Header photo du lieu ?-->
+
   <nav class="navbar navbar-dark bg-primary">
     <div class="nav navbar-nav">
       <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
@@ -33,12 +36,21 @@
         </select>
       </label>-->
   </div>
-  <div>
-    <img style="cursor: pointer;" title="English" class="flag flag-gb" (click)="translate.use('en')"/>
-    <img style="cursor: pointer;" title="Français" class="flag flag-fr" (click)="translate.use('fr')"/>
-    <img style="cursor: pointer;" title="Español" class="flag flag-es" (click)="translate.use('es')"/>
-    <img style="cursor: pointer;" title="Português" class="flag flag-pt" (click)="translate.use('fr')"/>
-    <img style="cursor: pointer;" title="Italiano" class="flag flag-it" (click)="translate.use('fr')"/>
-  </div>
+  <footer style="bottom: 0px; width: 100%; height: 35px;">
+    <div style="text-align: right;">
+      <img style="cursor: pointer;" [tooltip]="tooltipEnglish" class="flag flag-gb" (click)="translate.use('en')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipFrancais" class="flag flag-fr" (click)="translate.use('fr')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipEspanol" class="flag flag-es" (click)="translate.use('es')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipPortuges" class="flag flag-pt" (click)="translate.use('fr')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipItaliano" class="flag flag-it" (click)="translate.use('fr')" />
+
+      <!--les tooltips des éléments ci dessus-->
+      <tooltip-content #tooltipEnglish>English</tooltip-content>
+      <tooltip-content #tooltipFrancais>Français</tooltip-content>
+      <tooltip-content #tooltipEspanol>Español</tooltip-content>
+      <tooltip-content #tooltipPortuges>Português</tooltip-content>
+      <tooltip-content #tooltipItaliano>Italiano</tooltip-content>
+    </div>
+  </footer>
 
 </div>

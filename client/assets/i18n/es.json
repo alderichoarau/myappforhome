@@ -14,14 +14,16 @@
     "menubar.title": "Tarifs"
   },
   "contact": {
-    "menubar.title": "Contact"
+    "menubar.title": "Contact",
+    "firstbox.title": "Contact",
+    "secondbox.title": "Dónde encontrarnos ?"
   },
   "about": {
-    "menubar.title": "A propos",
-    "firstbox.title": "A propos",
-    "firstbox.author.label": "Auteur :",
+    "menubar.title": "A proposito",
+    "firstbox.title": "A proposito",
+    "firstbox.author.label": "Autor :",
     "firstbox.github.label": "GitHub :",
-    "firstbox.github.repo.label": "Répertoire projet :",
+    "firstbox.github.repo.label": "Repertorio del proyecto :",
     "firstbox.toolused.label": "Les outils utilisés :"
   }
 }

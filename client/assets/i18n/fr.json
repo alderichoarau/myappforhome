@@ -14,7 +14,9 @@
     "menubar.title": "Tarifs"
   },
   "contact": {
-    "menubar.title": "Contact"
+    "menubar.title": "Contact",
+    "firstbox.title": "Contact",
+    "secondbox.title": "Où nous trouver ?"
   },
   "about": {
     "menubar.title": "A propos",

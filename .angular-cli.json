@@ -10,6 +10,7 @@
       "assets": [
         "assets",
         "assets/favicon.ico",
+        "assets/capitole.png",
         "assets/i18n/en.json",
         "assets/i18n/fr.json",
         "assets/i18n/es.json",
