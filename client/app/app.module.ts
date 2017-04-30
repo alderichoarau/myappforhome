@@ -1,14 +1,19 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
+
+// Les pages 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { OpinionComponent } from './opinion/opinion.component';
 import { RoomComponent } from './room/room.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
+import { OpinionComponent } from './opinion/opinion.component';
 import { PriceComponent } from './price/price.component';
+import { LocalisationComponent } from './localisation/localisation.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+
+// Les modules
 import { DataService } from './services/data.service';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpModule, Http } from "@angular/http";
-import {TooltipModule} from "ngx-tooltip";
+import { TooltipModule } from "ngx-tooltip";
+import { Ng2DropdownModule } from 'ng2-material-dropdown';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
@@ -31,11 +37,13 @@ export function HttpLoaderFactory(http: Http) {
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    OpinionComponent,
     RoomComponent,
+    RestaurantComponent,
+    OpinionComponent,
     PriceComponent,
-    ContactComponent
+    LocalisationComponent,
+    ContactComponent,
+    AboutComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -55,6 +63,7 @@ export function HttpLoaderFactory(http: Http) {
         deps: [Http]
       }
     }),
+    // apikey generate by google console
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA1VGEnxbOIo06RCAkZ8fL9aGOv7bK1Zvg'
     })

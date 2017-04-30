@@ -1,0 +1,57 @@
+<div class="form-group"></div>
+
+<div class="card">
+  <h4 class="card-header"><label class="fa fa-map-marker"></label> {{ 'localisation.firstbox.title' | translate }}</h4>
+  <div class="card-block">
+    <p>Depuis gare</p>
+    <p>Depuis Aéroport</p>
+    <p>En voiture</p>
+  </div>
+</div>
+
+<div class="card">
+  <h4 class="card-header"><label class="fa fa-map-marker"></label> {{ 'localisation.secondbox.title' | translate }}</h4>
+  <div class="card-block">
+
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+
+    <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false">
+      <sebm-google-map-marker [latitude]="lat" [longitude]="lng" [zoom]="zoom" [label]="label">
+        <sebm-google-map-info-window>
+          <strong>{{'localisation.googlemap.firsttooltip' | translate }}</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+
+      <sebm-google-map-marker [latitude]="latB" [longitude]="lngB" [zoom]="zoom" [label]="labelB">
+        <sebm-google-map-info-window>
+          <strong>{{'localisation.googlemap.secondtooltip' | translate }}</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+
+      <sebm-google-map-marker [latitude]="latC" [longitude]="lngC" [zoom]="zoom" [label]="labelC">
+        <sebm-google-map-info-window>
+          <strong>{{'localisation.googlemap.firdtooltip' | translate }}</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+
+      <sebm-google-map-marker [latitude]="latD" [longitude]="lngD" [zoom]="zoom" [label]="labelD">
+        <sebm-google-map-info-window>
+          <strong>{{'localisation.googlemap.fourthtooltip' | translate }}</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+
+      <sebm-google-map-marker [latitude]="latE" [longitude]="lngE" [zoom]="zoom" [label]="labelE">
+        <sebm-google-map-info-window>
+          <strong>{{'localisation.googlemap.fifthtooltip' | translate }}</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+
+      <sebm-google-map-circle [latitude]="lat" [longitude]="lng" [radius]="400" [fillColor]="'red'" [editable]="true">
+      </sebm-google-map-circle>
+
+    </sebm-google-map>
+
+  </div>
+
+</div>
