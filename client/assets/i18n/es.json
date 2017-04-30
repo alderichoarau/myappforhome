@@ -16,14 +16,14 @@
   },
   "localisation": {
     "menubar.title": "Où nous trouver",
-    "firstbox.title":"Accès",
+    "firstbox.title": "Accès",
     "secondbox.title": "Dónde encontrarnos ?",
-    "googlemap":{
-      "firsttooltip":"La maison d'hôte",
-      "secondtooltip":"Place du Capitole",
-      "firdtooltip":"Cité de l'Espace",
-      "fourthtooltip":"Gare Matabiau",
-      "fifthtooltip":"Aeroport Toulouse-Blagnac"
+    "googlemap": {
+      "firsttooltip": "La maison d'hôte",
+      "secondtooltip": "Place du Capitole",
+      "firdtooltip": "Cité de l'Espace",
+      "fourthtooltip": "Gare Matabiau",
+      "fifthtooltip": "Aeroport Toulouse-Blagnac"
     }
   },
   "contact": {
