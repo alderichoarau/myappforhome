@@ -12,6 +12,7 @@ export class DataService {
 
   constructor(private http: Http) { }
 
+  // pour les chats
   getCats(): Observable<any> {
     return this.http.get('/api/cats').map(res => res.json());
   }
@@ -34,6 +35,31 @@ export class DataService {
 
   deleteCat(cat): Observable<any> {
     return this.http.delete(`/api/cat/${cat._id}`, this.options);
+  }
+
+  // pour stocker en base les demandes de contacts client
+  getMessages(): Observable<any> {
+    return this.http.get('/api/messages').map(res => res.json());
+  }
+
+  countMessages(): Observable<any> {
+    return this.http.get('/api/messages/count').map(res => res.json());
+  }
+
+  addMessage(message): Observable<any> {
+    return this.http.post('/api/message', JSON.stringify(message), this.options);
+  }
+
+  getMessage(message): Observable<any> {
+    return this.http.get(`/api/message/${message._id}`, this.options);
+  }
+
+  editMessage(message): Observable<any> {
+    return this.http.put(`/api/message/${message._id}`, JSON.stringify(message), this.options);
+  }
+
+  deleteMessage(message): Observable<any> {
+    return this.http.delete(`/api/message/${message._id}`, this.options);
   }
 
 }

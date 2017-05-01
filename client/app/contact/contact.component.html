@@ -22,9 +22,104 @@
   </div>
 </div>
 
-<div class="card">
+<!--<div class="card">
   <h4 class="card-header"><label class="fa fa-map-marker"></label> test calendar</h4>
   <div class="card-block">
     Calendar to add
+  </div>
+</div>-->
+
+<div class="form-group"></div>
+
+<div class="card" *ngIf="isLoading">
+  <h4 class="card-header" style="text-align: center">Loading...</h4>
+  <div class="card-block text-xs-center">
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+  </div>
+</div>
+
+<app-toast [message]="toast.message"></app-toast>
+
+<!--<div class="card-block" *ngIf="!isLoading">-->
+  <!--<h4 class="card-header">Current messagess ({{messages.length}})</h4>-->
+  <!--<div>-->
+    <!--<table class="table table-bordered table-striped">-->
+      <!--<thead class="thead-default">-->
+        <!--<tr>-->
+          <!--<th>Last Name</th>
+          <th>First Name</th>
+          <th>Email</th>
+          <th>Subject</th>
+          <th>Messages</th>-->
+          <!--<th>Actions</th>-->
+        <!--</tr>-->
+      <!--</thead>-->
+      <!--<tbody *ngIf="messages.length === 0">
+        <tr>
+          <td colspan="4">There are no messages in the DB. Add a new message below.</td>
+        </tr>
+      </tbody>-->
+      <!--<tbody *ngIf="!isEditing">
+        <tr *ngFor="let message of messages">
+          <td>{{message.lastname}}</td>
+          <td>{{message.firstname}}</td>
+          <td>{{message.email}}</td>
+          <td>{{message.subject}}</td>
+          <td>{{message.messageClient}}</td>-->
+          <!--<td>
+            <button class="btn btn-sm btn-warning" (click)="enableEditing(message)"><i class="fa fa-pencil"></i> Edit</button>            <button class="btn btn-sm btn-danger" (click)="deleteMessage(message)"><i class="fa fa-trash"></i> Delete</button>
+          </td>-->
+        <!--</tr>-->
+      <!--</tbody>-->
+      <!--<tbody *ngIf="isEditing">
+        <tr>
+          <td colspan="4">
+            <form class="form-inline" #form="ngForm" (ngSubmit)="editMessage(message)" style="display:inline">
+              <div class="form-group">
+                <input class="form-control" type="text" name="lastname" [(ngModel)]="message.lastname" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="firstname" [(ngModel)]="message.firstname" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="email" [(ngModel)]="message.email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="subject" [(ngModel)]="message.subject" placeholder="Sujet" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="messageClient" [(ngModel)]="message.messageClient" placeholder="Message" required>
+              </div>
+              <button class="btn btn-sm btn-primary" type="submit" [disabled]="!form.form.valid"><i class="fa fa-floppy-o"></i> Save</button>
+            </form>
+            <button class="btn btn-sm btn-warning" (click)="cancelEditing()"><i class="fa fa-times"></i> Cancel</button>
+          </td>
+        </tr>
+      </tbody>-->
+    <!--</table>-->
+  <!--</div>-->
+<!--</div>-->
+
+<div class="card" *ngIf="!isEditing">
+  <h4 class="card-header">Add new Message</h4>
+  <div class="card-block">
+    <form [formGroup]="addMessageForm" (ngSubmit)="addMessage()" style="text-align:center">
+      <div class="form-group">
+        <input class="form-control" type="text" name="lastname" formControlName="lastname" placeholder="Last name">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="firstname" formControlName="firstname" placeholder="First name">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="email" formControlName="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="subject" formControlName="subject" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control retourClient" type="text" name="messageClient" formControlName="messageClient" placeholder="Message"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!addMessageForm.valid"><i class="fa fa-floppy-o"></i> Envoyer</button>
+    </form>
   </div>
 </div>
