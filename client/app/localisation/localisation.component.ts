@@ -39,4 +39,9 @@ export class LocalisationComponent {
   latE: number = 43.6293863;
   lngE: number = 1.367682000000059;
   labelE: string = "E";
+
+  // Ramée
+  latF: number = 43.56969556100059;
+  lngF: number = 1.344451904296875;
+  labelF: string = "F";
 }

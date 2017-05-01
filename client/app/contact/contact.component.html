@@ -1,27 +1,5 @@
 <div class="form-group"></div>
 
-<div class="card">
-  <h4 class="card-header">{{ 'contact.firstbox.title' | translate }}</h4>
-  <div class="card-block">
-    <h5>Our Guest Home</h5>
-    <div>
-      <a class="fa fa-twitter-square fa-4x" aria-hidden="true" href="https://fr.linkedin.com/in/alderichoarau" target="_blank"></a>
-      &nbsp;
-      <a class="fa fa-facebook-official fa-4x" aria-hidden="true" href="https://fr.linkedin.com/in/alderichoarau" target="_blank"></a>
-      &nbsp;
-      <a class="fa fa-instagram fa-4x" aria-hidden="true" href="https://fr.linkedin.com/in/alderichoarau" target="_blank"></a>
-    </div>
-    <div>
-      &nbsp;&nbsp;
-      <h6>Rue des Casernes,</h6>
-      <h6>Toulouse, 31400 FR.</h6>
-      &nbsp;&nbsp;
-      <h6>alderic.hoarau@gmail.com</h6>
-      <h6>tel: (+33)6.48.32.76.76</h6>
-    </div>
-  </div>
-</div>
-
 <!--<div class="card">
   <h4 class="card-header"><label class="fa fa-map-marker"></label> test calendar</h4>
   <div class="card-block">
@@ -41,37 +19,37 @@
 <app-toast [message]="toast.message"></app-toast>
 
 <!--<div class="card-block" *ngIf="!isLoading">-->
-  <!--<h4 class="card-header">Current messagess ({{messages.length}})</h4>-->
-  <!--<div>-->
-    <!--<table class="table table-bordered table-striped">-->
-      <!--<thead class="thead-default">-->
-        <!--<tr>-->
-          <!--<th>Last Name</th>
+<!--<h4 class="card-header">Current messagess ({{messages.length}})</h4>-->
+<!--<div>-->
+<!--<table class="table table-bordered table-striped">-->
+<!--<thead class="thead-default">-->
+<!--<tr>-->
+<!--<th>Last Name</th>
           <th>First Name</th>
           <th>Email</th>
           <th>Subject</th>
           <th>Messages</th>-->
-          <!--<th>Actions</th>-->
-        <!--</tr>-->
-      <!--</thead>-->
-      <!--<tbody *ngIf="messages.length === 0">
+<!--<th>Actions</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tbody *ngIf="messages.length === 0">
         <tr>
           <td colspan="4">There are no messages in the DB. Add a new message below.</td>
         </tr>
       </tbody>-->
-      <!--<tbody *ngIf="!isEditing">
+<!--<tbody *ngIf="!isEditing">
         <tr *ngFor="let message of messages">
           <td>{{message.lastname}}</td>
           <td>{{message.firstname}}</td>
           <td>{{message.email}}</td>
           <td>{{message.subject}}</td>
           <td>{{message.messageClient}}</td>-->
-          <!--<td>
+<!--<td>
             <button class="btn btn-sm btn-warning" (click)="enableEditing(message)"><i class="fa fa-pencil"></i> Edit</button>            <button class="btn btn-sm btn-danger" (click)="deleteMessage(message)"><i class="fa fa-trash"></i> Delete</button>
           </td>-->
-        <!--</tr>-->
-      <!--</tbody>-->
-      <!--<tbody *ngIf="isEditing">
+<!--</tr>-->
+<!--</tbody>-->
+<!--<tbody *ngIf="isEditing">
         <tr>
           <td colspan="4">
             <form class="form-inline" #form="ngForm" (ngSubmit)="editMessage(message)" style="display:inline">
@@ -96,12 +74,12 @@
           </td>
         </tr>
       </tbody>-->
-    <!--</table>-->
-  <!--</div>-->
+<!--</table>-->
+<!--</div>-->
 <!--</div>-->
 
 <div class="card" *ngIf="!isEditing">
-  <h4 class="card-header">Add new Message</h4>
+  <h4 class="card-header">Des questions ? N'hésitez pas à nous écrire :</h4>
   <div class="card-block">
     <form [formGroup]="addMessageForm" (ngSubmit)="addMessage()" style="text-align:center">
       <div class="form-group">
@@ -119,7 +97,30 @@
       <div class="form-group">
         <textarea class="form-control retourClient" type="text" name="messageClient" formControlName="messageClient" placeholder="Message"></textarea>
       </div>
-      <button class="btn btn-primary" type="submit" [disabled]="!addMessageForm.valid"><i class="fa fa-floppy-o"></i> Envoyer</button>
+      <div class="buttonAlign">
+        <button class="btn btn-primary" type="submit" [disabled]="!addMessageForm.valid"><i class="fa fa-sign-in"></i> Envoyer</button>
+      </div>
     </form>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <a class="lien" target="_blank" href="https://fr-fr.facebook.com/public/alderic-hoarau">
+      <img [tooltip]="tooltipFacebook" src="assets/reseau/logo-facebook-75.png" width="40" height="40">
+    </a>
+    <a class="lien" target="_blank" href="https://www.instagram.com/">
+      <img [tooltip]="tooltipInstagram" src="assets/reseau/logo-instagram-75.png" width="40" height="40">
+    </a>
+    <a class="lien" target="_blank" href="https://twitter.com/ald_974">
+      <img [tooltip]="tooltipTwitter" src="assets/reseau/logo-twitter-75.png" width="40" height="40">
+    </a>
+    <a class="lien" target="_blank">
+      <img [tooltip]="tooltipRss" src="assets/reseau/logo-rss-75.png" width="40" height="40">
+    </a>
+    <tooltip-content #tooltipFacebook>Follow us on Facebook</tooltip-content>
+    <tooltip-content #tooltipInstagram>Follow us on Instagram</tooltip-content>
+    <tooltip-content #tooltipTwitter>Follow us on Twitter</tooltip-content>
+    <tooltip-content #tooltipRss>Flux RSS</tooltip-content>
   </div>
 </div>
