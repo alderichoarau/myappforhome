@@ -1,0 +1,49 @@
+{
+  "home": {
+    "menubar.title": "Accoglienza"
+  },
+  "roomtour": {
+    "menubar.title": "La chambre"
+  },
+  "restaurant": {
+    "menubar.title": "La table d'hôtes"
+  },
+  "opinion": {
+    "menubar.title": "Opinion"
+  },
+  "price": {
+    "menubar.title": "Tarifs"
+  },
+  "localisation": {
+    "menubar.title": "Où nous trouver",
+    "firstbox.title": "Accès",
+    "secondbox.title": "A proposito",
+    "googlemap": {
+      "firsttooltip": "La maison d'hôte",
+      "secondtooltip": "Place du Capitole",
+      "firdtooltip": "Cité de l'Espace",
+      "fourthtooltip": "Gare Matabiau",
+      "fifthtooltip": "Aeroport Toulouse-Blagnac"
+    }
+  },
+  "contact": {
+    "menubar.title": "Contatto",
+    "firstbox.title": "Domande? Non esitate a contattarci:",
+    "firstbox.placeholder": {
+      "lastname": "Cognome",
+      "firstname": "Nome di battesimo",
+      "email": "E-mail",
+      "subject": "Soggetto",
+      "message": "Messaggio"
+    },
+    "button.label":"Send"
+  },
+  "about": {
+    "menubar.title": "A propos",
+    "firstbox.title": "A propos",
+    "firstbox.author.label": "Auteur :",
+    "firstbox.github.label": "GitHub :",
+    "firstbox.github.repo.label": "Répertoire projet",
+    "firstbox.toolused.label": "Les outils utilisés :"
+  }
+}

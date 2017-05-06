@@ -44,7 +44,7 @@ export function HttpLoaderFactory(http: Http) {
     PriceComponent,
     LocalisationComponent,
     ContactComponent,
-    AboutComponent,
+    AboutComponent
     // ContactFormComponent,
   ],
   imports: [

@@ -9,7 +9,6 @@ import { ContactComponent } from './contact/contact.component';
 import { OpinionComponent } from './opinion/opinion.component';
 import { PriceComponent } from './price/price.component';
 import { AboutComponent } from './about/about.component';
-// import { ContactFormComponent } from './contactform/contactform.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,8 +18,7 @@ const routes: Routes = [
   { path: 'price', component: PriceComponent },
   { path: 'localisation', component: LocalisationComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent },
-  // { path: 'contactform', component: ContactFormComponent }
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
