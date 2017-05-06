@@ -1,6 +1,6 @@
 {
   "home": {
-    "menubar.title": "Accueil"
+    "menubar.title": "Accoglienza"
   },
   "roomtour": {
     "menubar.title": "La chambre"
@@ -27,8 +27,16 @@
     }
   },
   "contact": {
-    "menubar.title": "Contact",
-    "firstbox.title": "A proposito"
+    "menubar.title": "Contatto",
+    "firstbox.title": "Domande? Non esitate a contattarci:",
+    "firstbox.placeholder": {
+      "lastname": "Cognome",
+      "firstname": "Nome di battesimo",
+      "email": "E-mail",
+      "subject": "Soggetto",
+      "message": "Messaggio"
+    },
+    "button.label":"Send"
   },
   "about": {
     "menubar.title": "A propos",

@@ -16,7 +16,7 @@
   },
   "localisation": {
     "menubar.title": "Le lieu",
-    "firstbox.title": "Accès",
+    "firstbox.title": "Itinéraire",
     "secondbox.title": "Où nous trouver ?",
     "googlemap": {
       "firsttooltip": "La maison d'hôte",
@@ -28,7 +28,15 @@
   },
   "contact": {
     "menubar.title": "Contact",
-    "firstbox.title": "Contactez-nous"
+    "firstbox.title": "Des questions ? N'hésitez pas à nous écrire :",
+    "firstbox.placeholder": {
+      "lastname": "Nom de famille",
+      "firstname": "Prénom",
+      "email": "E-mail",
+      "subject": "Objet",
+      "message": "Message"
+    },
+    "button.label": "Envoyer"
   },
   "about": {
     "menubar.title": "A propos",

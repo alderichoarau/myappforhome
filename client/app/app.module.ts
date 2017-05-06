@@ -12,6 +12,7 @@ import { PriceComponent } from './price/price.component';
 import { LocalisationComponent } from './localisation/localisation.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+// import { ContactFormComponent } from './contactform/contactform.component';
 
 // Les modules
 import { DataService } from './services/data.service';
@@ -44,6 +45,7 @@ export function HttpLoaderFactory(http: Http) {
     LocalisationComponent,
     ContactComponent,
     AboutComponent,
+    // ContactFormComponent,
   ],
   imports: [
     AppRoutingModule,

@@ -79,26 +79,26 @@
 <!--</div>-->
 
 <div class="card" *ngIf="!isEditing">
-  <h4 class="card-header">Des questions ? N'hésitez pas à nous écrire :</h4>
+  <h4 class="card-header">{{'contact.firstbox.title' | translate }}</h4>
   <div class="card-block">
     <form [formGroup]="addMessageForm" (ngSubmit)="addMessage()" style="text-align:center">
       <div class="form-group">
-        <input class="form-control" type="text" name="lastname" formControlName="lastname" placeholder="Last name">
+        <input class="form-control" type="text" name="lastname" formControlName="lastname" placeholder="{{'contact.firstbox.placeholder.lastname' | translate }}">
       </div>
       <div class="form-group">
-        <input class="form-control" type="text" name="firstname" formControlName="firstname" placeholder="First name">
+        <input class="form-control" type="text" name="firstname" formControlName="firstname" placeholder="{{'contact.firstbox.placeholder.firstname' | translate }}">
       </div>
       <div class="form-group">
-        <input class="form-control" type="text" name="email" formControlName="email" placeholder="Email">
+        <input class="form-control" type="text" name="email" formControlName="email" placeholder="{{'contact.firstbox.placeholder.email' | translate }}">
       </div>
       <div class="form-group">
-        <input class="form-control" type="text" name="subject" formControlName="subject" placeholder="Subject">
+        <input class="form-control" type="text" name="subject" formControlName="subject" placeholder="{{'contact.firstbox.placeholder.subject' | translate }}">
       </div>
       <div class="form-group">
-        <textarea class="form-control retourClient" type="text" name="messageClient" formControlName="messageClient" placeholder="Message"></textarea>
+        <textarea class="form-control retourClient" type="text" name="messageClient" formControlName="messageClient" placeholder="{{'contact.firstbox.placeholder.message' | translate }}"></textarea>
       </div>
       <div class="buttonAlign">
-        <button class="btn btn-primary" type="submit" [disabled]="!addMessageForm.valid"><i class="fa fa-sign-in"></i> Envoyer</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!addMessageForm.valid"><i class="fa fa-sign-in"></i> {{'contact.button.label' | translate }}</button>
       </div>
     </form>
   </div>

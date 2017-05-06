@@ -29,6 +29,9 @@
       <a routerLink="/about" class="nav-item nav-link" routerLinkActive="active">
         <i class="fa fa-info-circle"></i> {{ 'about.menubar.title' | translate }}
       </a>
+      <!--<a routerLink="/contactform" class="nav-item nav-link" routerLinkActive="active">
+        <i class="fa fa-info-circle"></i> {{ 'about.menubar.title' | translate }}
+      </a>-->
     </div>
   </nav>
 
@@ -47,8 +50,8 @@
       <img style="cursor: pointer;" [tooltip]="tooltipEnglish" class="flag flag-gb" (click)="translate.use('en')" />
       <img style="cursor: pointer;" [tooltip]="tooltipFrancais" class="flag flag-fr" (click)="translate.use('fr')" />
       <img style="cursor: pointer;" [tooltip]="tooltipEspanol" class="flag flag-es" (click)="translate.use('es')" />
-      <img style="cursor: pointer;" [tooltip]="tooltipPortuges" class="flag flag-pt" (click)="translate.use('fr')" />
-      <img style="cursor: pointer;" [tooltip]="tooltipItaliano" class="flag flag-it" (click)="translate.use('fr')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipPortuges" class="flag flag-pt" (click)="translate.use('pt')" />
+      <img style="cursor: pointer;" [tooltip]="tooltipItaliano" class="flag flag-it" (click)="translate.use('it')" />
 
       <!--les tooltips des éléments ci dessus-->
       <tooltip-content #tooltipEnglish>English</tooltip-content>

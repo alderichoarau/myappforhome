@@ -16,8 +16,8 @@
   },
   "localisation": {
     "menubar.title": "Où nous trouver",
-    "firstbox.title": "Accès",
-    "secondbox.title": "Where find us ?",
+    "firstbox.title": "Itinerary",
+    "secondbox.title": "Where find us?",
     "googlemap": {
       "firsttooltip": "La maison d'hôte",
       "secondtooltip": "Capitolium Place",
@@ -28,7 +28,15 @@
   },
   "contact": {
     "menubar.title": "Contact",
-    "firstbox.title": "Contact"
+    "firstbox.title": "Questions ? Fell free to write us:",
+    "firstbox.placeholder": {
+      "lastname": "Last name",
+      "firstname": "First name",
+      "email": "E-mail",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "button.label": "Send"
   },
   "about": {
     "menubar.title": "About",

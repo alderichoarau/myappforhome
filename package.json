@@ -44,9 +44,11 @@
     "ng2-material-dropdown": "^0.7.7",
     "ng2-translate": "^5.0.0",
     "ngx-tooltip": "0.0.9",
+    "nodemailer": "^4.0.1",
     "rxjs": "^5.3.0",
     "rxjs-node-stream-subject": "^0.2.0",
     "tether": "1.4.0",
+    "xoauth2": "^1.2.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
