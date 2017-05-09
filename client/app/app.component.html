@@ -4,7 +4,7 @@
   <!--Header photo du lieu ?-->
 
   <nav class="navbar navbar-dark bg-primary">
-    <div class="nav navbar-nav">
+    <div id="top" class="nav navbar-nav">
       <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         <i class="fa fa-home"></i> {{ 'home.menubar.title' | translate }}
       </a>
@@ -62,6 +62,16 @@
       <tooltip-content #tooltipPortuges>Português</tooltip-content>
       <tooltip-content #tooltipItaliano>Italiano</tooltip-content>
     </div>
-  </footer>
 
+    <!--<go-top-button [html]="'<i class=\'fa fa-long-arrow-up\'></i>'" [animate]="true" [speed]="10" [acceleration]="2" [scrollDistance]="250"
+      [styles]="{
+                    'border-radius': '20px 20px 20px 20px',
+                    'right': '1px',
+                    'color': 'gray',
+                    'border': '1px solid',
+                    'line-height': '20px'
+                 }">
+    </go-top-button>-->
+
+  </footer>
 </div>

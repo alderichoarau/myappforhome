@@ -27,6 +27,7 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpModule, Http } from "@angular/http";
 import { TooltipModule } from "ngx-tooltip";
 import { Ng2DropdownModule } from 'ng2-material-dropdown';
+import {MdButtonModule, MdCheckboxModule, MdCardModule, MdTabsModule} from '@angular/material';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
@@ -47,6 +48,10 @@ export function HttpLoaderFactory(http: Http) {
     // ContactFormComponent,
   ],
   imports: [
+    MdButtonModule, 
+    MdTabsModule,
+    MdCardModule,
+    MdCheckboxModule,
     AppRoutingModule,
     SharedModule,
     BrowserModule,
