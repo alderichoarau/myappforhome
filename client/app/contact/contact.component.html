@@ -9,12 +9,12 @@
 
 <div class="form-group"></div>
 
-<div class="card" *ngIf="isLoading">
+<!--<div class="card" *ngIf="isLoading">
   <h4 class="card-header" style="text-align: center">Loading...</h4>
   <div class="card-block text-xs-center">
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
   </div>
-</div>
+</div>-->
 
 <app-toast [message]="toast.message"></app-toast>
 
@@ -106,21 +106,32 @@
 
 <div class="card">
   <div class="card-header">
-    <a class="lien" target="_blank" href="https://fr-fr.facebook.com/public/alderic-hoarau">
-      <img [tooltip]="tooltipFacebook" src="assets/reseau/logo-facebook-75.png" width="40" height="40">
-    </a>
-    <a class="lien" target="_blank" href="https://www.instagram.com/">
-      <img [tooltip]="tooltipInstagram" src="assets/reseau/logo-instagram-75.png" width="40" height="40">
-    </a>
-    <a class="lien" target="_blank" href="https://twitter.com/ald_974">
-      <img [tooltip]="tooltipTwitter" src="assets/reseau/logo-twitter-75.png" width="40" height="40">
-    </a>
-    <a class="lien" target="_blank">
-      <img [tooltip]="tooltipRss" src="assets/reseau/logo-rss-75.png" width="40" height="40">
-    </a>
-    <tooltip-content #tooltipFacebook>Follow us on Facebook</tooltip-content>
-    <tooltip-content #tooltipInstagram>Follow us on Instagram</tooltip-content>
-    <tooltip-content #tooltipTwitter>Follow us on Twitter</tooltip-content>
-    <tooltip-content #tooltipRss>Flux RSS</tooltip-content>
+    <ul class="socialCart">
+      <a class="lien socialCartLogo" target="_blank" href="https://fr-fr.facebook.com/public/alderic-hoarau">
+        <img [tooltip]="tooltipFacebook" src="assets/reseau/logo_facebook.svg" width="36" height="36">
+      </a>
+      <a class="lien socialCartLogo" target="_blank" href="https://www.instagram.com/">
+        <img [tooltip]="tooltipInstagram" src="assets/reseau/logo-instagram.svg" width="36" height="36">
+      </a>
+      <a class="lien socialCartLogo" target="_blank" href="https://twitter.com/ald_974">
+        <img [tooltip]="tooltipTwitter" src="assets/reseau/logo-twitter.svg" width="36" height="36">
+      </a>
+      <a class="lien socialCartLogo" target="_blank">
+        <img [tooltip]="tooltipYoutube" src="assets/reseau/logo-youtube.svg" width="36" height="36">
+      </a>
+      <a class="lien socialCartLogo" target="_blank">
+        <img [tooltip]="tooltipPinterest" src="assets/reseau/logo-pinterest.svg" width="36" height="36">
+      </a>
+      <a class="lien socialCartLogo" target="_blank">
+        <img [tooltip]="tooltipLinkdin" src="assets/reseau/logo-linkedin.svg" width="36" height="36">
+      </a>
+      <tooltip-content #tooltipFacebook>Accéder à la page Facebook officiel</tooltip-content>
+      <tooltip-content #tooltipInstagram>Suivez-nous sur Instagram</tooltip-content>
+      <tooltip-content #tooltipTwitter>Suivre la maison d'hôte sur Twitter</tooltip-content>
+      <tooltip-content #tooltipLinkedin>Accéder à Linkedin</tooltip-content>
+      <tooltip-content #tooltipYoutube>Accéder à notre chaîne Youtube</tooltip-content>
+      <tooltip-content #tooltipPinterest>Accéder à Pinterest</tooltip-content>
+      <tooltip-content #tooltipLinkdin>Accéder à Linkedin</tooltip-content>
+    </ul>
   </div>
 </div>

@@ -1,7 +1,12 @@
 <div class="form-group"></div>
 
 <div class="card">
-  <h4 class="card-header">{{ 'about.firstbox.title' | translate }}</h4>
+  <h4 class="card-header">
+    <a class="hearderStyle" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    {{ 'about.firstbox.title' | translate }}
+    </a>
+  </h4>
+  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
   <div class="card-block">
     <ul>
       <li><b>{{ 'about.firstbox.author.label' | translate }}</b> <a href="https://fr.linkedin.com/in/alderichoarau" target="_blank">Hoarau Aldéric</a></li>
@@ -17,5 +22,6 @@
         <li><a href="http://www.fontawesome.io" target="_blank">Font Awesome</a></li>
       </ul>
     </ul>
+  </div>
   </div>
 </div>

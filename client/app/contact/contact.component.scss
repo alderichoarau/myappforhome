@@ -14,3 +14,15 @@
 .lien {
      text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
 }
+
+.socialCart{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 0.5rem;
+}
+
+.socialCartLogo{
+    display: inline-block;
+    margin: 0 0.3rem;
+}

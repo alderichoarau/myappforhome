@@ -20,7 +20,6 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CalendarModule } from 'angular-calendar';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
@@ -54,7 +53,6 @@ export function HttpLoaderFactory(http: Http) {
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    CalendarModule.forRoot(),
     NgbModalModule.forRoot(),
     HttpModule,
     TooltipModule,
